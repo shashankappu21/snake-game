@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #343b45;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 65vh;
+  position: relative;
+}
+
+.output-container {
+  flex: 1;
+  padding: 10px;
+}
+
+#output-display {
+  height: 100%;
+  background-color: #1e2127;
+}
+
+.editor-container {
+  flex: 1;
+  padding: 10px;
+  width: 50%; /* Set the width to occupy the left half of the webpage */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.resize-handle {
+  width: 10px;
+  background-color: #333;
+  cursor: ew-resize;
+}
+
+#code-editor {
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  background-color: #0000006a;
+  display: flex;
+  height: 100px;
+}
+
+#menu-button:hover,
+#save-button:hover,
+#run-button:hover,
+#submit-button:hover {
+  background-color: rgb(9, 207, 20);
+}
+
+#menu-button,#save-button,#run-button,#submit-button{
+  margin-left: 100px;
+  /* width: 5rem;
+  height: 2rem; */
+  min-width: 5rem;
+  min-height: 2rem;
+  max-width: 8rem;
+  max-height: 2.7rem;
+  margin-top: 37px;
+  background-color: rgb(0, 169, 0);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#save-button{
+  margin-left: 350px;
+}
+
+#run-button,#submit-button{
+  margin-left: 20px;
+}
+
+
+#level{
+  margin-left: 400px;
+  font-size: 2.3rem;
+  margin-right: 300px;
+}
+
+#hint{
+  resize: none;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #333;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.code-editor{
+  color: black;
+}
+
+iframe{
+  width: 100%;
+  height: 90%;
+  border: 0;
+  outline: 0;
+}
+
+#output-display {
+  width: 100%;
+}
